@@ -9,15 +9,25 @@ files = document.querySelector(".files")
 
 
 // COMMENT: This code makes the button pulse for about 5 seconds (alternating opacity every second) after it's clicked.
-//Add aria-label to help set context for user. 
+//Add aria-label to help set context for user.
 
 button.addEventListener("click", () => {
-	button.textContent = "."
-  for(let i = 0; i < 3; i++) {
-  	return i % 2 === 0 ? button.setAttribute("style", "opacity: 1; opacity: transition 1s;")
-    : i % 2 != 0 ? button.setAttribute("style", "opacity: 0; opacity: transition 1s;")
-    : button.setAttribute("style", "opacity: 1; opacity: transition 1s;")
-  }
-})
+   button.textContent = ".";
+   let counter = 0;
+
+   let intervalId = setInterval(() => {
+       let isEven = counter % 2 === 0;
+       button.style.transition = "opacity 1s";
+       button.style.opacity = isEven ? "1" : "0";
+       counter++;
+       
+       if(counter > 7){
+           clearInterval(intervalId);
+           button.textContent = "ERROR: DATA BREACH";
+           button.setAttribute("style", "color: red;")
+           button.style.opacity = "1"
+       }
+   }, 1000);
+});
 
 
