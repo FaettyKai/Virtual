@@ -24,11 +24,12 @@
     font-display: swap;
 }
 
-body {
+body { /*
     background: linear-gradient(
     to bottom right,
     #403F44, #1E1B32);
-    border-radius: 4px;
+    border-radius: 4px; */
+    background-image: url("./img/cyberpunk-6061251_1920.jpg");
 }
 
 header {
