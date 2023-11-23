@@ -132,4 +132,5 @@ main {
 
 .for-candidate, .sign {
     font-family: "Glitch Goblin";
+    box-shadow: 4px 4px 5px lavender;
 }
