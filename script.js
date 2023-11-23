@@ -18,7 +18,7 @@ button.addEventListener("click", () => {
  
     let intervalId = setInterval(() => {
         let isEven = counter % 2 === 0;
-        buttonSpan.style.transition = "opacity 0.5s";
+        buttonSpan.style.transition = "opacity 0.2s";
         buttonSpan.style.opacity = isEven ? "1" : "0";
         counter++;
  
@@ -46,5 +46,6 @@ button.addEventListener("click", () => {
  home.addEventListener("click", () => {
  })
  
-
-
+// Inline Javascript added to for-candidate & sign to open google forms
+// <button onclick = "window.location = 'https://forms.gle/vUfZau3JRmA1Y9pi6';" 
+// class = "for-candidate"> inline to open on same tab

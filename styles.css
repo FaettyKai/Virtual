@@ -35,19 +35,22 @@ body { /*
 header {
     background: linear-gradient(
     to bottom right,
-    #6889FF, #C668FF);
+    #6889FF, #181963);
     border-radius: 4px;
+    opacity: 0.3;
 }
 
 .head {
     font-size: 3rem;
     font-weight: bold;
     font-family: "Glitch Goblin";
+    color: white;
 }
 
 .head2 {
     font-size: 5rem;
     font-family: "Glitch Goblin";
+    color: white;
 }
 
 nav {
@@ -67,7 +70,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    color: white;
+    font-weight: bold;
 }
 
 .reserved, .copy {
@@ -114,9 +117,10 @@ main {
 .sign-up, .candidate {
   opacity: 0;
   font-family: "Glitch Goblin";
+  color: white;
 }
 
-.home:hover, .news:hover, .files:hover {
+.home:hover, .news:hover, .files:hover, .data:hover {
   cursor: pointer;
 }
 
@@ -124,4 +128,8 @@ main {
   width: 15rem;
   color: white;
   font-family: "Glitch Goblin";
+}
+
+.for-candidate, .sign {
+    font-family: "Glitch Goblin";
 }
